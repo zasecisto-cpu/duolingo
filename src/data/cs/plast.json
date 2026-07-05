@@ -1,0 +1,36 @@
+{
+  "id": "plast",
+  "title": "Čtení plástu",
+  "tasks": [
+    {
+      "find": "vajicko",
+      "label": "vajíčko",
+      "why": "Drobná bílá tyčinka na dně buňky, velká asi 1,5 mm. Čerstvé stojí kolmo, starší se naklání. Vajíčka = matka tu byla v posledních 3 dnech. Nejlíp je uvidíš, když plást natočíš zády ke slunci."
+    },
+    {
+      "find": "larva",
+      "label": "larvu (otevřený plod)",
+      "why": "Perleťově bílá larva stočená do písmene C, plave v mateří kašičce. Zdravá larva je lesklá a vlhká — matná nebo zažloutlá signalizuje problém."
+    },
+    {
+      "find": "plod",
+      "label": "zavíčkovaný plod",
+      "why": "Matné, mírně vypouklé víčko barvy světlé kůže. Uvnitř se larva mění v kuklu. Souvislá plocha víček = zdravá matka. Děravý „prostřílený“ plod = varovný signál."
+    },
+    {
+      "find": "med",
+      "label": "zavíčkovaný med",
+      "why": "Víčka medu jsou světlejší, plošší a voskově bílá až průsvitná — na rozdíl od matných vypouklých víček plodu. Zavíčkovaný med je zralý, připravený k vytočení."
+    },
+    {
+      "find": "pyl",
+      "label": "pyl",
+      "why": "Buňky napěchované pylem hrají barvami podle rostlin — oranžová, žlutá, ale i modrá nebo šedá. Pyl je bílkovinná strava pro larvy, včely ho ukládají kolem plodu."
+    },
+    {
+      "find": "matecnik",
+      "label": "matečník",
+      "why": "Buňka tvaru buráku visící dolů — jediná svislá buňka v úlu. Na spodní hraně plástu = rojový. Uprostřed plástu = náhradní (tichá výměna nebo nouzový). Rozdíl je pro včelaře zásadní!"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "topics": [
+    {
+      "id": "biologie",
+      "name": "Biologia pszczoły",
+      "icon": "lupa",
+      "color": "medova",
+      "questions": [
+        {
+          "q": "Ile nóg ma pszczoła?",
+          "options": ["4", "6", "8"],
+          "answer": 1,
+          "why": "Pszczoła to owad, a owady mają trzy pary nóg."
+        },
+        {
+          "q": "Ile skrzydeł ma pszczoła?",
+          "options": ["2", "4", "6"],
+          "answer": 1,
+          "why": "Dwie pary skrzydeł błoniastych, łączących się w locie haczykami."
+        }
+      ]
+    },
+    {
+      "id": "zivot",
+      "name": "Życie ula i rojenie",
+      "icon": "domecek",
+      "color": "coral",
+      "questions": [
+        {
+          "q": "Co to jest rój?",
+          "options": ["Chora rodzina", "Część pszczół odlatująca z matką", "Martwe pszczoły"],
+          "answer": 1,
+          "why": "Rójka to naturalny podział rodziny pszczelej w celu rozmnażania."
+        }
+      ]
+    },
+    {
+      "id": "produkty",
+      "name": "Miód i produkty pszczele",
+      "icon": "kapka",
+      "color": "amber",
+      "questions": [
+        {
+          "q": "Z czego pszczoły robią miód?",
+          "options": ["Z pyłku", "Z nektaru", "Z wody"],
+          "answer": 1,
+          "why": "Miód powstaje z zebranego nektaru kwiatowego lub spadzi."
+        }
+      ]
+    },
+    {
+      "id": "zdravi",
+      "name": "Zdrowie pszczół i choroby",
+      "icon": "stit",
+      "color": "teal",
+      "questions": [
+        {
+          "q": "Co to jest warroza?",
+          "options": ["Atak roztocza Varroa", "Zatrucie", "Głód"],
+          "answer": 0,
+          "why": "Pasożytnicza choroba wywoływana przez roztocza Varroa destructor."
+        }
+      ]
+    },
+    {
+      "id": "praxe",
+      "name": "Praktyka i sprzęt",
+      "icon": "kufrik",
+      "color": "blue",
+      "questions": [
+        {
+          "q": "Do czego służy podkurzacz?",
+          "options": ["Do ogrzewania", "Do uspokajania pszczół dymem", "Do leczenia"],
+          "answer": 1,
+          "why": "Dym maskuje feromony alarmowe i skłania pszczoły do pobierania miodu, co je uspokaja."
+        }
+      ]
+    },
+    {
+      "id": "zacatek",
+      "name": "Zacząć i obowiązki",
+      "icon": "vlajecka",
+      "color": "green",
+      "questions": [
+        {
+          "q": "Kiedy najlepiej kupić pierwszą rodzinę?",
+          "options": ["Jesienią", "Wiosną (kwiecień-maj)", "Zimą"],
+          "answer": 1,
+          "why": "Wiosną rodzina rozwija się i masz przed sobą cały sezon na naukę przed zimą."
+        }
+      ]
+    }
+  ]
+}

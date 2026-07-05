@@ -1,0 +1,36 @@
+{
+  "id": "plast",
+  "title": "Czytanie plastra",
+  "tasks": [
+    {
+      "find": "vajicko",
+      "label": "jajko",
+      "why": "Mała biała pałeczka na dnie komórki, o długości około 1,5 mm. Świeże stoi pionowo, starsze się pochyla. Jajka = matka była tu w ciągu ostatnich 3 dni."
+    },
+    {
+      "find": "larva",
+      "label": "larwę (czerw otwarty)",
+      "why": "Perłowobiała larwa zwinięta w kształcie litery C, pływająca w mleczku pszczelim. Zdrowa larwa jest błyszcząca i wilgotna."
+    },
+    {
+      "find": "plod",
+      "label": "czerw zasklepiony",
+      "why": "Matowe, lekko wypukłe wieczka o barwie jasnej skóry. Wewnątrz larwa zamienia się w poczwarkę. Spójna powierzchnia wieczek = zdrowa matka."
+    },
+    {
+      "find": "med",
+      "label": "miód zasklepiony",
+      "why": "Wieczka miodu są jaśniejsze, bardziej płaskie i woskowobiałe lub półprzezroczyste — w przeciwieństwie do matowych, wypukłych wieczek czerwiu."
+    },
+    {
+      "find": "pyl",
+      "label": "pyłek",
+      "why": "Komórki wypełnione pyłkiem mienią się kolorami w zależności od roślin. Pyłek to pokarm białkowy dla larw."
+    },
+    {
+      "find": "matecnik",
+      "label": "matecznik",
+      "why": "Komórka w kształcie orzeszka ziemnego wisząca w dół — jedyna pionowa komórka w ulu. Wychowuje się w niej przyszła królowa."
+    }
+  ]
+}

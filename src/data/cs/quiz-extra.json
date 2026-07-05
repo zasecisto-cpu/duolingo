@@ -1,0 +1,660 @@
+{
+  "topics": [
+    {
+      "id": "biologie",
+      "name": "Biologie včely",
+      "icon": "lupa",
+      "color": "medova",
+      "questions": [
+        {
+          "q": "Kolik nohou má včela?",
+          "options": ["4", "6", "8"],
+          "answer": 1,
+          "why": "Včela je hmyz, a hmyz má vždy tři páry nohou. Pavouci s osmi nohama mezi hmyz nepatří."
+        },
+        {
+          "q": "Kolik křídel má včela?",
+          "options": ["2", "4", "6"],
+          "answer": 1,
+          "why": "Dva páry blanitých křídel, které se za letu spojují háčky v jeden funkční celek."
+        },
+        {
+          "q": "Kolik očí má včela celkem?",
+          "options": ["2", "3", "5"],
+          "answer": 2,
+          "why": "Dvě velká složená oči po stranách a tři jednoduchá očka (ocelli) na temeni hlavy pro orientaci podle světla."
+        },
+        {
+          "q": "Čím včela vnímá vůně?",
+          "options": ["Očima", "Tykadly", "Nožkama"],
+          "answer": 1,
+          "why": "Tykadla jsou hlavní čichový orgán — včela jimi „ochutnává“ vzduch a rozpoznává tisíce pachů včetně feromonů."
+        },
+        {
+          "q": "Kolikrát za sekundu mávne včela křídly?",
+          "options": ["asi 20×", "asi 230×", "asi 1000×"],
+          "answer": 1,
+          "why": "Rychlé mávání vytváří typické bzučení. Frekvence je tak vysoká, že ji ucho slyší jako tón."
+        },
+        {
+          "q": "Kde má včela medný váček?",
+          "options": ["V hlavě", "V zadečku", "Odděleně od žaludku"],
+          "answer": 2,
+          "why": "Medný váček je zásobník na nektar, oddělený od trávicího žaludku — proto nektar necestuje trávením a zůstává čistý."
+        },
+        {
+          "q": "Co je to žihadlo z pohledu původu?",
+          "options": ["Přeměněné kladélko", "Zub", "Noha"],
+          "answer": 0,
+          "why": "Žihadlo vzniklo z kladélka, proto ho mají jen samičky — dělnice a matka. Trubec žihadlo nemá."
+        },
+        {
+          "q": "Proč dělnice po bodnutí savce umře?",
+          "options": ["Vyčerpáním", "Žihadlo s háčky se vytrhne i s útrobami", "Otráví se"],
+          "answer": 1,
+          "why": "V pružné kůži savce zůstane zpětný háček žihadla; při odletu se včele vytrhne a zraní ji smrtelně."
+        },
+        {
+          "q": "Kolik váží jedna dělnice?",
+          "options": ["asi 0,1 g", "asi 1 g", "asi 5 g"],
+          "answer": 0,
+          "why": "Včela je drobná — na jeden kilogram jich připadá kolem 10 000 kusů."
+        },
+        {
+          "q": "Čím včela ochutnává sladkost?",
+          "options": ["Tykadly a nožkama", "Jen jazykem", "Očima"],
+          "answer": 0,
+          "why": "Chuťové receptory má i na nohách — když přistane, hned „ochutná“, zda stojí za to sát."
+        },
+        {
+          "q": "Co je sosák (jazýček)?",
+          "options": ["Žihadlo", "Trubička na sání nektaru", "Tykadlo"],
+          "answer": 1,
+          "why": "Dlouhý sosák nasává nektar z hloubi květů. Jeho délka určuje, které květy včela zvládne opýlit."
+        },
+        {
+          "q": "Jak včely dýchají?",
+          "options": ["Plícemi", "Vzdušnicemi (otvory na těle)", "Kůží"],
+          "answer": 1,
+          "why": "Vzduch proudí přímo do těla soustavou trubiček přes drobné otvory (vzdušnice), plíce hmyz nemá."
+        },
+        {
+          "q": "Kolik včel se vejde do jednoho kilogramu?",
+          "options": ["asi 1000", "asi 10000", "asi 100000"],
+          "answer": 1,
+          "why": "Jedna včela váží kolem desetiny gramu, takže kilogram včel je přibližně deset tisíc jedinců — síla malého roje."
+        },
+        {
+          "q": "Má včela kostru?",
+          "options": ["Ano, vnitřní", "Ano, vnější (krunýř)", "Nemá žádnou"],
+          "answer": 1,
+          "why": "Tělo drží vnější krunýř z chitinu (exoskelet), typický pro hmyz. Svaly jsou uvnitř."
+        },
+        {
+          "q": "Co jsou pylové rousky?",
+          "options": ["Nemoc", "Kuličky pylu na zadních nožkách", "Druh květu"],
+          "answer": 1,
+          "why": "Do košíčků na zadních nohách si včela lepí pyl smíchaný s trochou nektaru a nese ho domů jako rousky."
+        }
+      ]
+    },
+    {
+      "id": "zivot",
+      "name": "Život úlu a rojení",
+      "icon": "domecek",
+      "color": "coral",
+      "questions": [
+        {
+          "q": "Co je to roj?",
+          "options": ["Nemocné včelstvo", "Odletující část včelstva s matkou", "Mrtvé včely"],
+          "answer": 1,
+          "why": "Při rojení odletí stará matka s částí včel založit nový domov — přirozené množení včelstev."
+        },
+        {
+          "q": "V kterém období se včely nejčastěji rojí?",
+          "options": ["Podzim", "Konec jara (květen–červen)", "Zima"],
+          "answer": 1,
+          "why": "Vrchol rojové nálady je od května do června, kdy je včelstvo nejsilnější a v přírodě je nejvíce snůšky."
+        },
+        {
+          "q": "Kde roj obvykle nejdřív usedne?",
+          "options": ["Rovnou v novém úlu", "Na větev nebo plot poblíž", "Do země"],
+          "answer": 1,
+          "why": "Roj se nejdřív shlukne poblíž mateřského úlu, zatímco průzkumnice hledají trvalé bydlení."
+        },
+        {
+          "q": "Co dělá včelstvo, když ztratí matku a nemá vajíčka na výchovu nové?",
+          "options": ["Založí novou samo z ničeho", "Postupně zeslábne a zanikne", "Přivolá matku odjinud"],
+          "answer": 1,
+          "why": "Bez matky a bez mladých larev na výchovu náhradnice je včelstvo odsouzeno k zániku — proto je matka klíčová."
+        },
+        {
+          "q": "Co je trubčí vajíčko?",
+          "options": ["Oplozené", "Neoplozené", "Nakažené"],
+          "answer": 1,
+          "why": "Z neoplozeného vajíčka se líhne trubec. Matka rozhoduje, zda vajíčko oplodní, podle velikosti buňky."
+        },
+        {
+          "q": "Jak včely v úlu komunikují o zdroji potravy?",
+          "options": ["Zpěvem", "Tanečkem", "Barvami"],
+          "answer": 1,
+          "why": "Slavný „včelí tanec“ sděluje směr a vzdálenost ke zdroji nektaru — objev oceněný Nobelovou cenou (Karl von Frisch)."
+        },
+        {
+          "q": "Co znamená kruhový (kolový) tanec včely?",
+          "options": ["Zdroj je blízko", "Nepřítel u úlu", "Čas na rojení"],
+          "answer": 0,
+          "why": "Kruhový tanec říká „potrava je nedaleko“, zatímco osmičkový (vrtivý) udává i přesný směr a delší vzdálenost."
+        },
+        {
+          "q": "Proč včely v zimě netopí v celém úlu?",
+          "options": ["Šetří", "Topí jen v hroznu kolem matky", "Nemají čím"],
+          "answer": 1,
+          "why": "Včely se v zimě shluknou do těsného hroznu a chvěním svalů hřejí jádru, ne prázdný prostor kolem."
+        },
+        {
+          "q": "Jakou teplotu udržují včely v plodovém hnízdě?",
+          "options": ["asi 20 °C", "asi 35 °C", "asi 45 °C"],
+          "answer": 1,
+          "why": "Plod potřebuje stabilní teplo kolem 35 °C. Včely ho drží topením i chlazením (odpařováním vody) s obdivuhodnou přesností."
+        },
+        {
+          "q": "Co je česno?",
+          "options": ["Vchod do úlu", "Rámek", "Nemoc"],
+          "answer": 0,
+          "why": "Česno je otvor, kterým včely vlétají a vylétají. Strážkyně u něj hlídají, kdo smí dovnitř."
+        },
+        {
+          "q": "Kdo hlídá vchod do úlu?",
+          "options": ["Trubci", "Strážní dělnice", "Matka"],
+          "answer": 1,
+          "why": "Starší dělnice slouží jako stráž — kontrolují pach příchozích a brání úl před vetřelci a lupičkami."
+        },
+        {
+          "q": "Co je propolis?",
+          "options": ["Med", "Včelí tmel z pryskyřic", "Vosk"],
+          "answer": 1,
+          "why": "Včely sbírají pryskyřice ze stromů a dělají z nich propolis — tmelí jím spáry a dezinfikují úl."
+        },
+        {
+          "q": "K čemu slouží propolis v úlu?",
+          "options": ["Ke krmení", "K utěsnění a dezinfekci", "Ke stavbě plástů"],
+          "answer": 1,
+          "why": "Propolis má silné antibakteriální účinky — udržuje úl zdravý a zalepuje průvan."
+        },
+        {
+          "q": "Co je mateří kašička?",
+          "options": ["Med pro matku", "Výživná šťáva od mladušek", "Pyl"],
+          "answer": 1,
+          "why": "Mladé dělnice ji tvoří ze žláz. Larva krmená jen jí se stane matkou — proto se říká „superpotravina úlu“."
+        },
+        {
+          "q": "Proč se z jedné larvy stane matka a z jiné dělnice?",
+          "options": ["Genetika", "Odlišná výživa (mateří kašička)", "Náhoda"],
+          "answer": 1,
+          "why": "Geneticky jsou stejné. Rozhoduje strava: larva krmená výhradně mateří kašičkou se vyvine v matku."
+        }
+      ]
+    },
+    {
+      "id": "produkty",
+      "name": "Med a včelí produkty",
+      "icon": "kapka",
+      "color": "amber",
+      "questions": [
+        {
+          "q": "Z čeho včely vyrábějí med?",
+          "options": ["Z pylu", "Z nektaru", "Z vody"],
+          "answer": 1,
+          "why": "Nektar posbíraný z květů včely zahustí a přemění enzymy na med. Pyl je bílkovinná strava, ne surovina medu."
+        },
+        {
+          "q": "Kdy je med v plástu zralý?",
+          "options": ["Když je řídký", "Když ho včely zavíčkují voskem", "Hned po snesení"],
+          "answer": 1,
+          "why": "Zavíčkování znamená, že med má správně nízkou vlhkost. Nezralý med kvasí."
+        },
+        {
+          "q": "Kolik květů musí včely navštívit na sklenici medu?",
+          "options": ["Tisíce", "Statisíce", "Miliony"],
+          "answer": 2,
+          "why": "Na půl kila medu připadá zhruba let na miliony květů — proto je med tak cenný."
+        },
+        {
+          "q": "Proč med nezkazí ani po letech?",
+          "options": ["Konzervanty", "Nízká vlhkost a přírodní látky", "Chlazení"],
+          "answer": 1,
+          "why": "Zralý med má tak málo vody a takové složení, že v něm bakterie nepřežijí. Archeologové нашли jedlý med starý tisíce let."
+        },
+        {
+          "q": "Co znamená, že med „zkrystalizoval“ (ztuhl)?",
+          "options": ["Je zkažený", "Je to přirozený proces", "Je naředěný"],
+          "answer": 1,
+          "why": "Krystalizace je normální — med jen mění skupenství. Rozpustíš ho jemným ohřevem do 40 °C, aby neztratil kvalitu."
+        },
+        {
+          "q": "Jaký med krystalizuje nejrychleji?",
+          "options": ["Řepkový", "Akátový", "Medovicový"],
+          "answer": 0,
+          "why": "Řepkový med tuhne velmi rychle, i v plástu. Proto se točí hned po snůšce. Akátový naopak zůstává dlouho tekutý."
+        },
+        {
+          "q": "Co je medovicový (lesní) med?",
+          "options": ["Med z květů", "Med ze sladké šťávy na jehličí a listech", "Umělý med"],
+          "answer": 1,
+          "why": "Medovici (sladkou šťávu) vylučuje hmyz na stromech; včely ji sbírají a vzniká tmavý lesní med."
+        },
+        {
+          "q": "Na jakou teplotu se med nemá zahřívat?",
+          "options": ["Nad 40 °C", "Nad 100 °C", "Nezáleží"],
+          "answer": 0,
+          "why": "Nad 40 °C se ničí enzymy a cenné látky. Proto se med nikdy nevaří ani nedává do vroucího čaje."
+        },
+        {
+          "q": "Co je včelí vosk?",
+          "options": ["Nektar", "Látka ze žláz dělnic na stavbu plástů", "Pyl"],
+          "answer": 1,
+          "why": "Mladé dělnice vylučují vosk z břišních žláz a staví z něj šestiboké buňky plástu."
+        },
+        {
+          "q": "Proč mají buňky plástu tvar šestiúhelníku?",
+          "options": ["Náhoda", "Nejúspornější tvar bez mezer", "Kvůli matce"],
+          "answer": 1,
+          "why": "Šestiúhelník zaplní plochu beze zbytku a spotřebuje nejméně vosku na největší objem — dokonalá geometrie."
+        },
+        {
+          "q": "Co je pyl z pohledu výživy včel?",
+          "options": ["Zdroj cukru", "Zdroj bílkovin", "Zdroj vody"],
+          "answer": 1,
+          "why": "Med dodává energii (cukry), pyl bílkoviny a tuky. Bez pylu by včelstvo nevychovalo plod."
+        },
+        {
+          "q": "Kolik medu spotřebuje včelstvo na přezimování?",
+          "options": ["asi 2 kg", "asi 15–20 kg", "asi 100 kg"],
+          "answer": 1,
+          "why": "Na zimu potřebuje včelstvo zásobu kolem 15–20 kg (medu nebo cukerného krmiva). Málo zásob = úhyn hladem."
+        },
+        {
+          "q": "Co je perga (včelí chléb)?",
+          "options": ["Zkvašený pyl uložený v buňkách", "Druh medu", "Nemoc"],
+          "answer": 0,
+          "why": "Pyl udusaný a mléčně zkvašený v buňkách vydrží déle a je pro larvy lépe stravitelný — včelí „konzerva“."
+        },
+        {
+          "q": "Kolik medu udělá jedna dělnice za celý život?",
+          "options": ["asi 1/12 lžičky", "asi 1 lžíce", "asi 1 sklenice"],
+          "answer": 0,
+          "why": "Jedna včela vyrobí za život jen zlomek lžičky medu — proto je za každou sklenicí práce celého včelstva."
+        },
+        {
+          "q": "Smí se med dávat dětem do jednoho roku?",
+          "options": ["Ano", "Ne", "Jen v čaji"],
+          "answer": 1,
+          "why": "Kojencům do 1 roku se med nedoporučuje kvůli riziku botulismu (spory, které dětské střevo neubrání). Pro starší je bezpečný."
+        }
+      ]
+    },
+    {
+      "id": "zdravi",
+      "name": "Zdraví včel a nemoci",
+      "icon": "stit",
+      "color": "teal",
+      "questions": [
+        {
+          "q": "Co je varroáza?",
+          "options": ["Napadení roztočem Varroa", "Otrava", "Hlad"],
+          "answer": 0,
+          "why": "Roztoč Varroa destructor saje z včel a přenáší viry. Neléčené včelstvo na něj obvykle do roka uhyne."
+        },
+        {
+          "q": "Kde se roztoč Varroa nejraději množí?",
+          "options": ["V medu", "V zavíčkovaném plodu", "Na česně"],
+          "answer": 1,
+          "why": "Samička roztoče se schová do buňky před zavíčkováním a množí se na kukle — proto je plod klíčem k boji s ním."
+        },
+        {
+          "q": "Proč varroa preferuje trubčí plod?",
+          "options": ["Je sladší", "Delší vývoj = víc času na množení", "Je větší"],
+          "answer": 1,
+          "why": "Trubec se vyvíjí 24 dní, dělnice 21 — roztoč má v trubčí buňce víc času na potomstvo. Toho využívá vyřezávání trubčiny."
+        },
+        {
+          "q": "Co je „měl“ v souvislosti s varroázou?",
+          "options": ["Nemoc", "Drť spadlá na dno úlu ke kontrole roztočů", "Léčivo"],
+          "answer": 1,
+          "why": "Z měli (spadu na podložce) se počítají mrtví roztoči a odhaduje míra napadení. Sbírá se a posílá na rozbor."
+        },
+        {
+          "q": "Kdy je nejdůležitější ošetřit proti varroáze?",
+          "options": ["Na jaře", "Po posledním medobraní v létě", "V zimě"],
+          "answer": 1,
+          "why": "Tehdy se rodí dlouhověké zimní včely. Když je varroa poškodí, včelstvo zimu nepřežije."
+        },
+        {
+          "q": "Co je mor včelího plodu?",
+          "options": ["Neškodná plíseň", "Vážná bakteriální nákaza plodu", "Druh medu"],
+          "answer": 1,
+          "why": "Mor včelího plodu je nebezpečná, zákonem sledovaná nákaza. Při potvrzení se nařizují přísná opatření."
+        },
+        {
+          "q": "Co musíš udělat při podezření na mor včelího plodu?",
+          "options": ["Nic", "Nahlásit veterinární správě", "Přeléčit medem"],
+          "answer": 1,
+          "why": "Je to povinně hlášená nákaza. Neohlášení a šíření je přestupek — chrání to všechna včelstva v okolí."
+        },
+        {
+          "q": "Proč se nemá kupovat med neznámého původu ke krmení včel?",
+          "options": ["Je drahý", "Může přenést nákazu (spory moru)", "Je sladký"],
+          "answer": 1,
+          "why": "Cizí med může obsahovat spory moru plodu. Včelám se krmí jen cukerný roztok nebo jejich vlastní med."
+        },
+        {
+          "q": "Co je nozematóza?",
+          "options": ["Onemocnění trávení včel (prvok)", "Zlomené křídlo", "Hlad"],
+          "answer": 0,
+          "why": "Prvok Nosema napadá střevo včel, oslabuje je a zkracuje život. Podporuje ji vlhko a špatné zimování."
+        },
+        {
+          "q": "Co pomáhá prevenci nemocí v úlu nejvíc?",
+          "options": ["Silná včelstva a čisté dílo", "Hodně léků", "Teplo"],
+          "answer": 0,
+          "why": "Základ zdraví je silné včelstvo, obměna starého díla a hygiena. Léky řeší až to, čemu prevence nezabrání."
+        },
+        {
+          "q": "Proč se pravidelně obměňuje staré tmavé dílo (plásty)?",
+          "options": ["Je ošklivé", "Hromadí se v něm zbytky a choroboplodné zárodky", "Je těžké"],
+          "answer": 1,
+          "why": "Ve starých plástech se usazují nečistoty a patogeny. Obměna za světlé dílo je levná prevence."
+        },
+        {
+          "q": "Co jsou zavíječi (mol voskový)?",
+          "options": ["Užiteční brouci", "Škůdci ničící vosk a dílo", "Léčivo"],
+          "answer": 1,
+          "why": "Housenky zavíječe prožírají vosk. Silné včelstvo je ubrání, ale slabé nebo skladované plásty zničí."
+        },
+        {
+          "q": "Jak nejlépe ochránit skladované plásty před zavíječem?",
+          "options": ["Teplem", "Chladem nebo prosířením", "Vodou"],
+          "answer": 1,
+          "why": "Zavíječi nesnesou mráz. Plásty se skladují v chladu, případně se sírou proti molům."
+        },
+        {
+          "q": "Co je nejčastější příčina úhynu včelstev v zimě?",
+          "options": ["Zima", "Varroáza a hlad", "Hluk"],
+          "answer": 1,
+          "why": "Nejdůležitější faktor je roztoč Varroa a hlad. Silná, zdravá a dobře zásobené včelstva zimu přežijí."
+        },
+        {
+          "q": "Kam se posílá zimní měl na vyšetření?",
+          "options": ["Nikam", "Na určené vyšetření (přes ZO/laboratoř)", "Do obchodu"],
+          "answer": 1,
+          "why": "Zimní měl se sbírá a odevzdává na rozbor napadení roztočem — základ plánu jarního ošetření."
+        }
+      ]
+    },
+    {
+      "id": "praxe",
+      "name": "Praxe a vybavení",
+      "icon": "kufrik",
+      "color": "blue",
+      "questions": [
+        {
+          "q": "K čemu slouží dýmák (kuřák)?",
+          "options": ["K ohřevu", "Ke zklidnění včel kouřem", "K léčení"],
+          "answer": 1,
+          "why": "Kouř ztlumí poplašný feromon a včely se začnou sytit medem — jsou klidnější a méně bodají."
+        },
+        {
+          "q": "Proč včely při kouři zklidní?",
+          "options": ["Uspí je", "Přebijí poplašný pach a nasytí se medem", "Oslepnou"],
+          "answer": 1,
+          "why": "Kouř maskuje poplašný feromon a spustí instinkt „nasytit se před požárem“ — plná včela hůř bodá."
+        },
+        {
+          "q": "Co je nástavek?",
+          "options": ["Patro úlu", "Nemoc", "Rámek"],
+          "answer": 0,
+          "why": "Nástavek je jedno patro úlu s rámky. Přidáváním nástavků se rozšiřuje prostor podle síly včelstva."
+        },
+        {
+          "q": "Co je rámek?",
+          "options": ["Vchod", "Dřevěný rámeček s dílem", "Nástroj"],
+          "answer": 1,
+          "why": "Do rámku včely stavějí plást. Rámky se dají vytahovat a prohlížet — základ moderního včelaření."
+        },
+        {
+          "q": "Co je mezistěna?",
+          "options": ["Stěna úlu", "Vosková deska jako základ plástu", "Krmivo"],
+          "answer": 1,
+          "why": "Do rámku se dává mezistěna s předlisovaným vzorem buněk; včely na ní rychle a rovně vystaví plást."
+        },
+        {
+          "q": "K čemu slouží medomet?",
+          "options": ["K léčení", "K vytáčení medu z plástů", "Ke krmení"],
+          "answer": 1,
+          "why": "Medomet roztáčí plásty a odstředivá síla vytlačí med ven, aniž se plásty zničí — dají se vrátit včelám."
+        },
+        {
+          "q": "Jaké oblečení chrání začátečníka nejlépe?",
+          "options": ["Tričko", "Kombinéza s kuklou a rukavice", "Plavky"],
+          "answer": 1,
+          "why": "Světlá kombinéza, kukla přes obličej a rukavice dodají klid a jistotu, dokud si na včely nezvykneš."
+        },
+        {
+          "q": "Jakou barvu oblečení včely snášejí nejhůř?",
+          "options": ["Bílou", "Tmavou (černá, hnědá)", "Žlutou"],
+          "answer": 1,
+          "why": "Tmavé a chlupaté barvy připomínají přírodní nepřátele (medvěd). Světlé, hladké oblečení dráždí méně."
+        },
+        {
+          "q": "Proč se k úlu chodí zboku nebo zezadu, ne před česno?",
+          "options": ["Kvůli slunci", "Aby ses nepletl do letu včel", "Kvůli pachu"],
+          "answer": 1,
+          "why": "Před česnem je hlavní „letiště“. Když stojíš stranou, včely na tebe nenaráží a jsou klidnější."
+        },
+        {
+          "q": "Kdy je nejlepší doba na prohlídku úlu?",
+          "options": ["Ráno za rosy", "Teplý slunečný den, když jsou létavky v poli", "V noci"],
+          "answer": 1,
+          "why": "Za tepla a slunce je většina létavek venku, v úlu je méně včel a jsou klidnější — ideální na prohlídku."
+        },
+        {
+          "q": "Co je oddělek?",
+          "options": ["Nemocné včelstvo", "Malé nové včelstvo odebrané ze silného", "Rámek"],
+          "answer": 1,
+          "why": "Oddělek vytvoříš odebráním plástů s plodem a včelami. Je to řízené množení a zároveň prevence rojení."
+        },
+        {
+          "q": "Co je rozpěrák (včelařská páčka)?",
+          "options": ["Krmítko", "Nástroj na páčení rámků a čištění", "Léčivo"],
+          "answer": 1,
+          "why": "Rámek včely slepí propolisem; rozpěrákem je jemně uvolníš a seškrábeš vosk a tmel."
+        },
+        {
+          "q": "Kolik včelstev se doporučuje pro úplného začátečníka?",
+          "options": ["1", "2–3", "rovnou 10"],
+          "answer": 1,
+          "why": "S jedním včelstvem nemáš srovnání ani zálohu. Dvě až tři jsou akorát — poznáš rozdíly a chyba není konec."
+        },
+        {
+          "q": "Proč je dobré mít úly mírně nadzvednuté nad zemí?",
+          "options": ["Kvůli vzhledu", "Kvůli vlhkosti a pohodlné práci", "Kvůli včelám"],
+          "answer": 1,
+          "why": "Podstavec chrání dno před vlhkem a šetří tvá záda při prohlídce. Dřevo tak i déle vydrží."
+        },
+        {
+          "q": "Co dělat, když najdeš při prohlídce matku?",
+          "options": ["Chytit ji", "Nechat na pokoji a pracovat opatrně", "Přemístit"],
+          "answer": 1,
+          "why": "Matku jen zkontroluješ pohledem — že je a klade. Zbytečná manipulace ji ohrožuje. Klid a opatrnost stačí."
+        }
+      ]
+    },
+    {
+      "id": "zacatek",
+      "name": "Začínáme a povinnosti",
+      "icon": "vlajecka",
+      "color": "green",
+      "questions": [
+        {
+          "q": "Co je pro úplný start včelaření nejlepší?",
+          "options": ["Koupit vše nejdražší", "Najít zkušeného včelaře nebo kurz", "Číst jen internet"],
+          "answer": 1,
+          "why": "Mentor nebo kurz tě posune víc než cokoli. Praxe u úlu se z videa nenaučí."
+        },
+        {
+          "q": "Kdy je nejlepší doba pořídit první včelstvo?",
+          "options": ["Na podzim", "Na jaře (duben–květen)", "V zimě"],
+          "answer": 1,
+          "why": "Na jaře včelstvo sílí a máš před sebou celou sezónu na učení a pozorování před první zimou."
+        },
+        {
+          "q": "Kde je dobré umístit úly?",
+          "options": ["Do stínu a vlhka", "Na klidné, slunné, závětrné místo", "Doprostřed cesty"],
+          "answer": 1,
+          "why": "Ranní slunce včely brzy rozlétá, závětří šetří síly. Klid a přístup k vodě jsou plus."
+        },
+        {
+          "q": "Musí se v Česku chov včel registrovat?",
+          "options": ["Ne", "Ano, u ČMSCH", "Jen u obce"],
+          "answer": 1,
+          "why": "Chovatel se registruje u Českomoravské společnosti chovatelů (ČMSCH) a dostane registrační číslo. Včela je hospodářské zvíře."
+        },
+        {
+          "q": "Co dostane nový včelař po registraci u ČMSCH?",
+          "options": ["Med", "Registrační číslo chovatele a stanoviště", "Úl"],
+          "answer": 1,
+          "why": "Přidělí ti šestimístné číslo chovatele a číslo stanoviště (CZ + číslice). Ta pak potřebuješ k dalším hlášením."
+        },
+        {
+          "q": "Do kdy se každý rok hlásí počet včelstev na ČMSCH?",
+          "options": ["Do 15. září (stav k 1. 9.)", "Do konce roku", "Nehlásí se"],
+          "answer": 0,
+          "why": "Každoročně se hlásí počet včelstev ke stavu k 1. září, termín odeslání je do 15. září. Dá se i elektronicky."
+        },
+        {
+          "q": "Musí se dnes hlásit stanoviště na obecní úřad?",
+          "options": ["Ano, do února", "Ne, tato povinnost byla zrušena (2018)", "Jen ústně"],
+          "answer": 1,
+          "why": "Od roku 2018 se stanoviště nehlásí obci — údaje vede ČMSCH."
+        },
+        {
+          "q": "Jsou příjmy z medu u malého včelaře zdaněné?",
+          "options": ["Vždy", "Do 60 včelstev zpravidla osvobozeno", "Nikdy"],
+          "answer": 1,
+          "why": "Při počtu do 60 včelstev platí paušál 500 Kč na včelstvo a příjem bývá od daně osvobozen."
+        },
+        {
+          "q": "Potřebuješ ke včelaření na vlastní zahradě zvláštní povolení?",
+          "options": ["Ano, stavební", "Ne, ale musíš dodržet pravidla a ohledy na okolí", "Ano, od sousedů"],
+          "answer": 1,
+          "why": "Zvláštní povolení není třeba. Musíš ale dodržet předpisy a nenechat včely přímo nalétávat na sousedův pozemek."
+        },
+        {
+          "q": "Co je při umístění úlů u sousedů klíčové?",
+          "options": ["Barva úlu", "Zabránit přímému náletu včel na sousedův pozemek", "Počet"],
+          "answer": 1,
+          "why": "Přímý nálet na cizí pozemek zákon zakazuje. Řeší se směrem česna nebo bariérou (plot, keř), aby včely stoupaly vzhůru."
+        },
+        {
+          "q": "Kolik stojí orientačně základní start (úl, včelstvo, nářadí)?",
+          "options": ["Zdarma", "Řádově tisíce až desetitisíce Kč", "Miliony"],
+          "answer": 1,
+          "why": "Počítej s pořízením úlu, včelstva a základního vybavení. Vyplatí se začít menším počtem a postupně růst."
+        },
+        {
+          "q": "Proč je dobré si vést záznamy o každém včelstvu?",
+          "options": ["Kvůli úřadu", "Abys věděl, co se dělo, a učil se", "Není třeba"],
+          "answer": 1,
+          "why": "Zápisky o prohlídkách, léčení a snůšce z tebe rychle udělají lepšího včelaře."
+        },
+        {
+          "q": "Kde má začátečník brát vodu pro včely?",
+          "options": ["Nemusí", "Zajistit blízký zdroj (napáječku)", "Jen déšť"],
+          "answer": 1,
+          "why": "Včely nosí vodu na chlazení a krmení plodu. Blízká napáječka je odvede od sousedova bazénu."
+        },
+        {
+          "q": "Co je nejčastější chyba úplného začátečníka?",
+          "options": ["Málo čte", "Otvírá úl moc často a zbytečně", "Kupuje málo medu"],
+          "answer": 1,
+          "why": "Každá prohlídka včely ruší a ochlazuje plod. Méně je někdy víc — otvírej s jasným cílem, ne ze zvědavosti."
+        },
+        {
+          "q": "Vyplatí se vstoupit do místní základní organizace včelařů (ČSV)?",
+          "options": ["Ne", "Ano, kvůli radám, léčivům a společenství", "Jen kvůli časopisu"],
+          "answer": 1,
+          "why": "Členství přináší rady zkušených, organizované léčení, dotace, časopis i pojištění. Pro začátečníka velká opora."
+        },
+        {
+          "q": "Co udělat, když tě včela bodne?",
+          "options": ["Panikařit", "Klidně vyškrábnout žihadlo a odejít stranou", "Rozmáčknout ho"],
+          "answer": 1,
+          "why": "Žihadlo vyškrábni nehtem nebo páčkou (netlač váček jedu), zachovej klid a odejdi stranou. Mávání včely dráždí."
+        },
+        {
+          "q": "Jak snížit riziko silné alergické reakce u začátečníka?",
+          "options": ["Ignorovat", "Vědět o alergii předem, mít po ruce pomoc", "Bodat se schválně"],
+          "answer": 1,
+          "why": "Kdo neví, jak reaguje, ať zpočátku není u úlu sám a ví, kde je pomoc. Při dušnosti či otoku obličeje volej záchranku."
+        },
+        {
+          "q": "Proč začínat radši se dvěma včelstvy než s jedním?",
+          "options": ["Víc medu", "Máš srovnání a zálohu při problému", "Je to levnější"],
+          "answer": 1,
+          "why": "Se dvěma poznáš, co je „normální“, a když jedno oslabí, druhé pomůže (plodem, včelami). Jedno je zranitelné."
+        },
+        {
+          "q": "Co je nejlepší první krok, než koupíš včely?",
+          "options": ["Koupit úl", "Získat znalosti a najít mentora", "Postavit web"],
+          "answer": 1,
+          "why": "Nejdřív hlava, pak včely. Kurz, kniha a zkušený rádce ušetří spoustu chyb i peněz."
+        },
+        {
+          "q": "Jak často zhruba se dělá prohlídka v hlavní sezóně?",
+          "options": ["Denně", "Zhruba jednou za 7–10 dní", "Jednou za rok"],
+          "answer": 1,
+          "why": "V období rojení stačí a je potřeba dívat se přibližně týdenně (kvůli matečníkům). Mimo sezónu mnohem méně."
+        }
+      ]
+    },
+    {
+      "id": "bonus",
+      "name": "Chytáky a mýty",
+      "icon": "blesk",
+      "color": "amber",
+      "questions": [
+        {
+          "q": "Mýtus: Všechny včely bodají a umírají.",
+          "options": ["Pravda", "Nepravda"],
+          "answer": 1,
+          "why": "Žihadlo mají jen samičky (dělnice, matka). Trubci nebodají vůbec. A matka žihadlo použije jen na sokyni, ne na člověka."
+        },
+        {
+          "q": "Mýtus: Med je jen zahuštěný cukr, nic víc.",
+          "options": ["Pravda", "Nepravda"],
+          "answer": 1,
+          "why": "Med obsahuje kromě cukrů i enzymy, stopové látky a antioxidanty. Proto se s ním zachází šetrně a nepřehřívá se."
+        },
+        {
+          "q": "Mýtus: Včely v zimě spí (hibernují).",
+          "options": ["Pravda", "Nepravda"],
+          "answer": 1,
+          "why": "Včely nehibernují — v zimním hroznu se aktivně chvějí a topí, aby udržely teplo kolem matky. Proto potřebují zásoby."
+        },
+        {
+          "q": "Mýtus: Královna řídí a poroučí celému úlu.",
+          "options": ["Pravda", "Nepravda"],
+          "answer": 1,
+          "why": "Matka neřídí — o rojení, stavbě i výměně matky rozhodují dělnice kolektivně. Matka hlavně klade vajíčka."
+        },
+        {
+          "q": "Mýtus: Čím víc úlů hned na začátku, tím lépe.",
+          "options": ["Pravda", "Nepravda"],
+          "answer": 1,
+          "why": "Začátečník zvládne pár včelstev. Moc úlů naráz = přehlcení, chyby a vyhoření. Růst má být postupný, s rostoucí zkušeností."
+        }
+      ]
+    }
+  ]
+}

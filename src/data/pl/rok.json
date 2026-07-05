@@ -1,0 +1,180 @@
+{
+  "id": "rok",
+  "title": "Rok pszczelarza",
+  "startState": {
+    "sila": 60,
+    "zasoby": 60,
+    "rojeni": 20,
+    "med": 0
+  },
+  "months": [
+    {
+      "month": "Marzec",
+      "text": "Pierwsze ocieplenie powyżej 12 °C. Pszczoły wylatują na loty oczyszczające. Szybka kontrola ujawnia słabszą rodzinę i mało zapasów na skrajach plastrów.",
+      "options": [
+        {
+          "label": "Dodam ciasto miodowo-cukrowe nad gniazdo",
+          "effects": { "zasoby": 15, "sila": 5, "rojeni": 0, "med": 0 },
+          "correct": true,
+          "why": "Marzec to miesiąc, w którym najwięcej rodzin ginie z głodu. Ciasto jest bezpieczniejsze niż syrop, którego pszczoły nie pobrałyby w chłodzie."
+        },
+        {
+          "label": "Otworzę ul i zrobię pełny przegląd",
+          "effects": { "zasoby": 0, "sila": -10, "rojeni": 0, "med": 0 },
+          "correct": false,
+          "why": "Przy 12 °C pełne rozbieranie ula wychłodzi czerw. W marcu wystarczy szybkie spojrzenie z góry."
+        },
+        {
+          "label": "Nic, natura sama sobie poradzi",
+          "effects": { "zasoby": -15, "sila": -5, "rojeni": 0, "med": 0 },
+          "correct": false,
+          "why": "Wiosenny głód to cichy zabójca — rodzina z czerwiem zużywa zapasy szybciej niż zdąży przynieść nektar."
+        }
+      ]
+    },
+    {
+      "month": "Kwiecień",
+      "text": "Kwitną czereśnie i zbliża się rzepak. Rodzina rośnie w siłę, gniazdo się zapełnia. W ulu zaczyna brakować miejsca.",
+      "options": [
+        {
+          "label": "Dodam korpus z węzą",
+          "effects": { "sila": 10, "rojeni": -15, "zasoby": 0, "med": 0 },
+          "correct": true,
+          "why": "Poszerzenie przestrzeni na czas to najlepsza profilaktyka rojowa. Węza dodatkowo zajmie młode pszczoły budową."
+        },
+        {
+          "label": "Poczekam, aż ul będzie całkowicie pełny",
+          "effects": { "sila": 0, "rojeni": 20, "zasoby": 0, "med": 0 },
+          "correct": false,
+          "why": "Gdy pszczoły nie mają gdzie składać miodu, a królowa jaj, rodzina przechodzi w nastrój rojowy."
+        },
+        {
+          "label": "Zabiorę ramkę z czerwiem na wszelki wypadek",
+          "effects": { "sila": -10, "rojeni": -5, "zasoby": 0, "med": 0 },
+          "correct": false,
+          "why": "Niepotrzebnie osłabiasz rodzinę przed głównym pożytkiem. Odbieranie czerwiu robi się celowo przy tworzeniu odkłady."
+        }
+      ]
+    },
+    {
+      "month": "Maj",
+      "text": "Podczas przeglądu znajdujesz na dolnej krawędzi plastra zasklepione mateczniki. Klasyczna sytuacja rojowa.",
+      "options": [
+        {
+          "label": "Zerwę mateczniki i gotowe",
+          "effects": { "sila": 0, "rojeni": 15, "zasoby": 0, "med": 0 },
+          "correct": false,
+          "why": "Najczęstszy błąd początkujących. Zerwanie mateczników nie likwiduje nastroju rojowego — pszczoły zbudują nowe."
+        },
+        {
+          "label": "Zrobię odkład z matecznikiem",
+          "effects": { "rojeni": -30, "sila": -10, "med": -5, "zasoby": 0 },
+          "correct": true,
+          "why": "Utworzenie odkładu imituje wyrojenie — odbierasz część pszczół i czerwiu, dzięki czemu nastrój opada."
+        },
+        {
+          "label": "Zostawię to, może się nie wyroją",
+          "effects": { "rojeni": 25, "sila": 0, "zasoby": 0, "med": 0 },
+          "correct": false,
+          "why": "Zasklepiony matecznik oznacza rójkę w ciągu kilku dni. Stracisz matkę i połowę pszczół."
+        }
+      ]
+    },
+    {
+      "month": "Czerwiec",
+      "text": "Główny pożytek dobiega końca. Nadstawki ciężnieją, plastry są w większości poszyte.",
+      "options": [
+        {
+          "label": "Miodobranie: odwirowuję tylko poszyte plastry",
+          "effects": { "med": 30, "sila": 0, "zasoby": 0, "rojeni": 0 },
+          "correct": true,
+          "why": "Zasklepienie oznacza, że miód ma odpowiednią wilgotność (poniżej 18–20 %). Niedojrzały miód uległby sfermentowaniu."
+        },
+        {
+          "label": "Odwirowuję wszystko, żeby mieć to z głowy",
+          "effects": { "med": 20, "zasoby": -10, "sila": 0, "rojeni": 0 },
+          "correct": false,
+          "why": "Niedojrzały miód z nieposzytych plastrów ma za dużo wody i fermentuje."
+        },
+        {
+          "label": "Zostawię wszystko pszczołom, odwirowuję w sierpniu",
+          "effects": { "med": 5, "rojeni": 10, "sila": 0, "zasoby": 0 },
+          "correct": false,
+          "why": "Pełna nadstawka bez wolnego miejsca zwiększa nastrój rojowy, a miód rzepakowy skrystalizuje w plastrach."
+        }
+      ]
+    },
+    {
+      "month": "Lipiec",
+      "text": "Po ostatnim miodobraniu czas pomyśleć o roztoczach Varroa. Opad na dennicę pokazuje około 5 roztoczy dziennie.",
+      "options": [
+        {
+          "label": "Rozpoczynam leczenie letnie — kwas mrówkowy",
+          "effects": { "sila": 15, "zasoby": 0, "rojeni": 0, "med": 0 },
+          "correct": true,
+          "why": "Kluczowa decyzja sezonu. Teraz rodzi się zimowe pokolenie pszczół — jeśli Varroa je uszkodzi, rodzina nie przeżyje zimy."
+        },
+        {
+          "label": "Poczekam na jesienne odymianie",
+          "effects": { "sila": -20, "zasoby": 0, "rojeni": 0, "med": 0 },
+          "correct": false,
+          "why": "Roztocze zdążą uszkodzić zimowe pszczoły. Jesienne leczenie przyjdzie zbyt późno."
+        },
+        {
+          "label": "5 roztoczy to mało, nic nie robię",
+          "effects": { "sila": -15, "zasoby": 0, "rojeni": 0, "med": 0 },
+          "correct": false,
+          "why": "5 roztoczy dziennie w lipcu sygnalizuje tysiące pasożytów w ulu. Ich populacja rośnie wykładniczo."
+        }
+      ]
+    },
+    {
+      "month": "Sierpień",
+      "text": "Koniec pożytków. Rodzina potrzebuje uzupełnić zapasy zimowe.",
+      "options": [
+        {
+          "label": "Karmię stopniowo, łącznie 15–20 kg cukru",
+          "effects": { "zasoby": 30, "sila": 0, "rojeni": 0, "med": 0 },
+          "correct": true,
+          "why": "Stopniowe karmienie w sierpniu i wrześniu daje pszczołom czas na przerobienie i poszycie syropu."
+        },
+        {
+          "label": "Wleję wszystko na raz pod koniec września",
+          "effects": { "zasoby": 10, "sila": -5, "rojeni": 0, "med": 0 },
+          "correct": false,
+          "why": "Późne i gwałtowne karmienie zużywa pszczoły zimowe, a zapasy mogą pozostać nieposzyte i sfermentować."
+        },
+        {
+          "label": "Zostawię im tylko resztki miodu",
+          "effects": { "zasoby": -10, "sila": 0, "rojeni": 0, "med": 0 },
+          "correct": false,
+          "why": "Po miodobraniu zapasy są niewystarczające. Głód to najczęstsza przyczyna osypania się rodzin zimą."
+        }
+      ]
+    },
+    {
+      "month": "Wrzesień",
+      "text": "Ostatnie ciepłe dni. Przy wylotku obserwujesz wzmożony ruch — obce pszczoły próbują dostać się do środka.",
+      "options": [
+        {
+          "label": "Zwężam wylotek do 1–2 cm",
+          "effects": { "zasoby": 10, "sila": 5, "rojeni": 0, "med": 0 },
+          "correct": true,
+          "why": "To jest rabunek. Zwężony wylotek jest łatwiejszy do obrony. Rabunek może zniszczyć słabszą rodzinę w jeden dzień."
+        },
+        {
+          "label": "Przeciwnie, otwieram wylot szeroko",
+          "effects": { "zasoby": -20, "sila": -10, "rojeni": 0, "med": 0 },
+          "correct": false,
+          "why": "Szeroki wylotek jesienią to zaproszenie dla złodziejek. Słaba rodzina nie obroni zapasów."
+        },
+        {
+          "label": "Spryskam obce pszczoły wodą",
+          "effects": { "zasoby": -10, "sila": 0, "rojeni": 0, "med": 0 },
+          "correct": false,
+          "why": "Woda nie powstrzyma rabunku. Rozwiązaniem jest zmniejszenie szerokości wylotka."
+        }
+      ]
+    }
+  ]
+}

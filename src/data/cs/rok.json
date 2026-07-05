@@ -1,0 +1,180 @@
+{
+  "id": "rok",
+  "title": "Včelařův rok",
+  "startState": {
+    "sila": 60,
+    "zasoby": 60,
+    "rojeni": 20,
+    "med": 0
+  },
+  "months": [
+    {
+      "month": "Březen",
+      "text": "První oteplení nad 12 °C. Včely vylétají na proletové lety. Při rychlé kontrole vidíš slabší včelstvo a málo zásob na okrajích plástů.",
+      "options": [
+        {
+          "label": "Přidám medocukrové těsto nad plodiště",
+          "effects": { "zasoby": 15, "sila": 5, "rojeni": 0, "med": 0 },
+          "correct": true,
+          "why": "Březen je měsíc, kdy nejvíc včelstev umírá hlady — plod už roste a spotřeba stoupá. Těsto je bezpečnější než sirup, který by v chladnu včely nezpracovaly."
+        },
+        {
+          "label": "Otevřu úl a udělám kompletní prohlídku",
+          "effects": { "zasoby": 0, "sila": -10, "rojeni": 0, "med": 0 },
+          "correct": false,
+          "why": "Při 12 °C plné rozebrání úlu prochladí plod. V březnu stačí rychlý pohled shora — kompletní prohlídka počká na 15+ °C."
+        },
+        {
+          "label": "Nic, příroda se postará",
+          "effects": { "zasoby": -15, "sila": -5, "rojeni": 0, "med": 0 },
+          "correct": false,
+          "why": "Jarní hladovění je tichý zabiják — včelstvo s plodem spotřebuje zásoby rychleji, než stačí donést nektar."
+        }
+      ]
+    },
+    {
+      "month": "Duben",
+      "text": "Kvetou třešně a řepka se blíží. Včelstvo sílí, plodiště se plní. Prostor v úlu začíná být těsný.",
+      "options": [
+        {
+          "label": "Přidám nástavek s mezistěnami",
+          "effects": { "sila": 10, "rojeni": -15, "zasoby": 0, "med": 0 },
+          "correct": true,
+          "why": "Rozšíření prostoru včas je nejlepší prevence rojení. Mezistěny navíc zaměstnají mladušky stavbou."
+        },
+        {
+          "label": "Počkám, až bude úl úplně plný",
+          "effects": { "sila": 0, "rojeni": 20, "zasoby": 0, "med": 0 },
+          "correct": false,
+          "why": "Když včely nemají kam ukládat a matka kam klást, přepnou do rojové nálady — a tu už těžko zvrátíš."
+        },
+        {
+          "label": "Odeberu plást s plodem pro jistotu",
+          "effects": { "sila": -10, "rojeni": -5, "zasoby": 0, "med": 0 },
+          "correct": false,
+          "why": "Zbytečně oslabuješ včelstvo před hlavní snůškou. Odběr plodu se dělá cíleně (oddělky), ne preventivně v dubnu."
+        }
+      ]
+    },
+    {
+      "month": "Květen",
+      "text": "Při prohlídce najdeš na spodní hraně plástu zavíčkované matečníky. Klasická rojová situace.",
+      "options": [
+        {
+          "label": "Vylomím matečníky a hotovo",
+          "effects": { "sila": 0, "rojeni": 15, "zasoby": 0, "med": 0 },
+          "correct": false,
+          "why": "Nejčastější začátečnická chyba. Vylomení matečníků rojovou náladu neřeší — včely postaví nové a vyrojí se stejně, jen o týden později."
+        },
+        {
+          "label": "Udělám oddělek s matečníkem",
+          "effects": { "rojeni": -30, "sila": -10, "med": -5, "zasoby": 0 },
+          "correct": true,
+          "why": "Oddělek napodobí vyrojení — odebereš část včel a plodu, nálada opadne a navíc získáš nové včelstvo. Trochu síly to stojí, ale roj bys ztratil celý."
+        },
+        {
+          "label": "Nechám to být, třeba se nevyrojí",
+          "effects": { "rojeni": 25, "sila": 0, "zasoby": 0, "med": 0 },
+          "correct": false,
+          "why": "Zavíčkovaný matečník znamená roj do několika dní. Ztratíš matku a půlku včel — a s nimi letošní med."
+        }
+      ]
+    },
+    {
+      "month": "Červen",
+      "text": "Hlavní snůška vrcholí. Medníky těžknou, plásty jsou z větší části zavíčkované.",
+      "options": [
+        {
+          "label": "Vytočím jen zavíčkované plásty",
+          "effects": { "med": 30, "sila": 0, "zasoby": 0, "rojeni": 0 },
+          "correct": true,
+          "why": "Zavíčkování znamená, že med má správnou vlhkost (pod 18–20 %). Nezralý med by ve sklenici zkvasil."
+        },
+        {
+          "label": "Vytočím všechno, ať to mám z krku",
+          "effects": { "med": 20, "zasoby": -10, "sila": 0, "rojeni": 0 },
+          "correct": false,
+          "why": "Nezralý med z nezavíčkovaných plástů má moc vody a kvasí. Navíc bereš včelám i to, co ještě zpracovávají."
+        },
+        {
+          "label": "Nechám vše včelám, vytočím až v srpnu",
+          "effects": { "med": 5, "rojeni": 10, "sila": 0, "zasoby": 0 },
+          "correct": false,
+          "why": "Plný medník bez místa opět zvyšuje rojovou náladu a řepkový med ti mezitím zkrystalizuje přímo v plástech."
+        }
+      ]
+    },
+    {
+      "month": "Červenec",
+      "text": "Po posledním medobraní je čas myslet na varroázu. Spad na podložce ukazuje kolem 5 roztočů denně.",
+      "options": [
+        {
+          "label": "Zahájím letní ošetření — kyselina mravenčí",
+          "effects": { "sila": 15, "zasoby": 0, "rojeni": 0, "med": 0 },
+          "correct": true,
+          "why": "Klíčové rozhodnutí sezóny. Teď se rodí zimní generace včel — pokud ji varroa poškodí, včelstvo zimu nepřežije, i kdyby vypadalo silné."
+        },
+        {
+          "label": "Počkám na podzimní fumigaci",
+          "effects": { "sila": -20, "zasoby": 0, "rojeni": 0, "med": 0 },
+          "correct": false,
+          "why": "Roztoč mezitím poškodí dlouhověké zimní včely. Podzimní ošetření už jen dorazí zbytek — škoda je hotová."
+        },
+        {
+          "label": "5 roztočů denně je málo, neřeším",
+          "effects": { "sila": -15, "zasoby": 0, "rojeni": 0, "med": 0 },
+          "correct": false,
+          "why": "5 spadlých denně v červenci signalizuje tisíce roztočů v plodu. Populace varroa roste exponenciálně — v září jich bude desetinásobek."
+        }
+      ]
+    },
+    {
+      "month": "Srpen",
+      "text": "Snůška skončila. Včelstvo potřebuje doplnit zimní zásoby.",
+      "options": [
+        {
+          "label": "Krmím postupně, celkem 15–20 kg cukru",
+          "effects": { "zasoby": 30, "sila": 0, "rojeni": 0, "med": 0 },
+          "correct": true,
+          "why": "Postupné krmení v srpnu a září dá včelám čas sirup zpracovat a zavíčkovat. Na zimu potřebuje včelstvo 15–20 kg zásob."
+        },
+        {
+          "label": "Naliju vše najednou koncem září",
+          "effects": { "zasoby": 10, "sila": -5, "rojeni": 0, "med": 0 },
+          "correct": false,
+          "why": "Pozdní a nárazové krmení včely nestihnou zpracovat — zásoby zůstanou řídké a v zimě mohou zkvasit. Navíc se udřou zimní včely."
+        },
+        {
+          "label": "Nechám jim jen zbytky medu",
+          "effects": { "zasoby": -10, "sila": 0, "rojeni": 0, "med": 0 },
+          "correct": false,
+          "why": "Po medobraní zásoby nestačí. Hladové včelstvo v zimě neuhyne zimou, ale hladem — nejčastější příčina úhynu vůbec."
+        }
+      ]
+    },
+    {
+      "month": "Září",
+      "text": "Poslední teplé dny. U česna pozoruješ zvýšený ruch — cizí včely se pokoušejí dostat dovnitř.",
+      "options": [
+        {
+          "label": "Zúžím česno na 1–2 cm",
+          "effects": { "zasoby": 10, "sila": 5, "rojeni": 0, "med": 0 },
+          "correct": true,
+          "why": "Tohle je loupež (slídění). Zúžené česno silné včelstvo snadno ubrání. Loupež dokáže slabší včelstvo zlikvidovat za jediný den."
+        },
+        {
+          "label": "Naopak česno rozšířím, ať mají vzduch",
+          "effects": { "zasoby": -20, "sila": -10, "rojeni": 0, "med": 0 },
+          "correct": false,
+          "why": "Široké česno na podzim je pozvánka pro lupičky. Slabé včelstvo neubrání zásoby a přijde o vše."
+        },
+        {
+          "label": "Postříkám cizí včely vodou",
+          "effects": { "zasoby": -10, "sila": 0, "rojeni": 0, "med": 0 },
+          "correct": false,
+          "why": "Voda loupež nezastaví — motivace lupiček je silnější. Řešením je zmenšit prostor, který musí obránkyně hlídat."
+        }
+      ]
+    }
+  ]
+}

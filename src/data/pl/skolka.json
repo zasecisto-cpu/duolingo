@@ -1,0 +1,114 @@
+{
+  "id": "skolka",
+  "title": "Przedszkole pszczele",
+  "levels": [
+    {
+      "name": "Poznaj pszczołę",
+      "type": "image-choice",
+      "questions": [
+        {
+          "q": "Kto ma najdłuższy odwłok i jako jedyna składa zapłodnione jaja?",
+          "options": ["królowa", "robotnica", "truteń"],
+          "answer": "królowa",
+          "why": "Królowa (matka) jest najdłuższą pszczołą w ulu. Jej wydłużony odwłok jest pełen jajników — składa do 2000 jaj dziennie."
+        },
+        {
+          "q": "Kto ma wielkie oczy na całą głowę i krępe ciało?",
+          "options": ["królowa", "robotnica", "truteń"],
+          "answer": "truteń",
+          "why": "Truteń potrzebuje wielkich oczu, aby dostrzec królową w powietrzu podczas lotu godowego. Nie ma żądła ani nie zbiera nektaru."
+        },
+        {
+          "q": "Kto ma na tylnych nogach koszyczki na pyłek oraz żądło?",
+          "options": ["królowa", "robotnica", "truteń"],
+          "answer": "robotnica",
+          "why": "Robotnica to siła robocza ula. Koszyczki służą do noszenia pyłku, a żądło ma haczyki, dlatego po użądleniu umiera."
+        },
+        {
+          "q": "Kogo w ulu w lecie jest około 40–60 tysięcy?",
+          "options": ["królowa", "robotnica", "truteń"],
+          "answer": "robotnica",
+          "why": "Robotnice stanowią zdecydowaną większość rodziny. Królowa jest tylko jedna, a trutni kilkaset."
+        },
+        {
+          "q": "Kto jesienią zostaje wyrzucony z ula?",
+          "options": ["królowa", "robotnica", "truteń"],
+          "answer": "truteń",
+          "why": "Po sezonie trutnie są niepotrzebni, bo tylko zjadają zapasy. Robotnice wypychają ich z ula we wrześniu."
+        }
+      ]
+    },
+    {
+      "name": "Kalendarz rozwoju",
+      "type": "text-choice",
+      "questions": [
+        {
+          "q": "Królowa wyklucza się po...",
+          "options": ["16 dniach", "21 dniach", "24 dniach"],
+          "answer": 0,
+          "why": "16 dni — najszybciej ze wszystkich, dzięki karmieniu wyłącznie mleczkiem pszczelim."
+        },
+        {
+          "q": "Robotnica wyklucza się po...",
+          "options": ["16 dniach", "21 dniach", "24 dniach"],
+          "answer": 1,
+          "why": "21 dni — dokładnie 3 tygodnie. Kluczowa liczba dla pszczelarza do planowania prac i leczenia."
+        },
+        {
+          "q": "Truteń wyklucza się po...",
+          "options": ["16 dniach", "21 dniach", "24 dniach"],
+          "answer": 2,
+          "why": "24 dni — najdłużej. Z tego powodu roztocz Varroa woli czerw trutowy, bo ma więcej czasu na rozwój."
+        },
+        {
+          "q": "Jak długo żyje letnia robotnica?",
+          "options": ["4–6 tygodni", "6 miesięcy", "3–5 lat"],
+          "answer": 0,
+          "why": "Letnia robotnica napracowuje się na śmierć w 4–6 tygodni. Zimowa żyje do 6 miesięcy, a królowa 3–5 lat."
+        },
+        {
+          "q": "Z czego wyklucza się truteń?",
+          "options": ["Z zapłodnionego jaja", "Z niezapłodnionego jaja", "Z mleczka pszczelego"],
+          "answer": 1,
+          "why": "Truteń powstaje z niezapłodnionego jaja (partenogeneza) — nie ma ojca, ma tylko dziadka."
+        }
+      ]
+    },
+    {
+      "name": "Kto co robi",
+      "type": "text-choice",
+      "questions": [
+        {
+          "q": "Kto jedyny w ulu zapyla kwiaty i przynosi nektar?",
+          "options": ["Robotnica", "Truteń", "Królowa"],
+          "answer": 0,
+          "why": "Tylko robotnice latają po pożytek. Truteń i królowa nigdy nie zbierają nektaru ani pyłku."
+        },
+        {
+          "q": "Jakie jest jedyne zadanie trutnia?",
+          "options": ["Obrona ula", "Zapłodnienie królowej", "Karmienie larw"],
+          "answer": 1,
+          "why": "Truteń żyje tylko po to, by zapłodnić królową podczas lotu godowego, po czym natychmiast umiera."
+        },
+        {
+          "q": "Czym królowa utrzymuje porządek w ulu?",
+          "options": ["Brzęczeniem", "Feromonami", "Tańcem"],
+          "answer": 1,
+          "why": "Feromon królowej (substancja mateczna) rozprzestrzenia się w ulu. Gdy słabnie, pszczoły budują mateczniki ratunkowe."
+        },
+        {
+          "q": "Co robi młoda robotnica w pierwszych dniach życia?",
+          "options": ["Lata po nektar", "Sprząta komórki i karmi larwy", "Pilnuje wejścia"],
+          "answer": 1,
+          "why": "Robotnica przechodzi przez szczeble kariery: sprzątaczka → karmicielka → budowniczka → strażniczka → zbieraczka."
+        },
+        {
+          "q": "Kto w ulu decyduje o rojeniu?",
+          "options": ["Królowa", "Robotnice wspólnie", "Najstarszy truteń"],
+          "answer": 1,
+          "why": "Królowa nie rządzi. Decyzje o rojeniu podejmują robotnice wspólnie, reagując na zagęszczenie i brak substancji matecznej."
+        }
+      ]
+    }
+  ]
+}

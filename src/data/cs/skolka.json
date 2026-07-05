@@ -1,0 +1,114 @@
+{
+  "id": "skolka",
+  "title": "Včelí školka",
+  "levels": [
+    {
+      "name": "Poznej včelu",
+      "type": "image-choice",
+      "questions": [
+        {
+          "q": "Kdo má nejdelší zadeček and jako jediná klade oplozená vajíčka?",
+          "options": ["matka", "dělnice", "trubec"],
+          "answer": "matka",
+          "why": "Matka je nejdelší včela v úlu — její protáhlý zadeček je plný vaječníků. Denně naklade až 2 000 vajíček, víc než sama váží."
+        },
+        {
+          "q": "Kdo má obrovské oči přes celou hlavu a zavalité tělo?",
+          "options": ["matka", "dělnice", "trubec"],
+          "answer": "trubec",
+          "why": "Trubec potřebuje velké oči, aby při snubním proletu našel matku ve vzduchu. Nemá žihadlo ani nesbírá nektar."
+        },
+        {
+          "q": "Kdo má na zadních nohách košíčky na pyl a žihadlo?",
+          "options": ["matka", "dělnice", "trubec"],
+          "answer": "dělnice",
+          "why": "Dělnice je pracovní síla úlu — košíčky (rousky) na nohách slouží k nošení pylu. Žihadlo má s háčky, proto po bodnutí umírá."
+        },
+        {
+          "q": "Koho je v úlu v létě kolem 40–60 tisíc?",
+          "options": ["matka", "dělnice", "trubec"],
+          "answer": "dělnice",
+          "why": "Dělnice tvoří drtivou většinu včelstva. Matka je jen jedna a trubců bývá pár stovek až tisíc — a to jen v sezóně."
+        },
+        {
+          "q": "Kdo na podzim dostane od včelstva vyhazov z úlu?",
+          "options": ["matka", "dělnice", "trubec"],
+          "answer": "trubec",
+          "why": "Po skončení sezóny jsou trubci zbyteční — jen jedí zásoby. Dělnice je v září vytlačí ven. Drsné, ale úsporné."
+        }
+      ]
+    },
+    {
+      "name": "Kalendář líhnutí",
+      "type": "text-choice",
+      "questions": [
+        {
+          "q": "Matka se líhne za…",
+          "options": ["16 dní", "21 dní", "24 dní"],
+          "answer": 0,
+          "why": "16 dní — paradoxně nejrychleji, díky výživné mateří kašičce po celou dobu vývoje. Pomůcka: čím důležitější, tím rychlejší."
+        },
+        {
+          "q": "Dělnice se líhne za…",
+          "options": ["16 dní", "21 dní", "24 dní"],
+          "answer": 1,
+          "why": "21 dní — přesně 3 týdny. Nejdůležitější číslo pro včelaře: podle něj počítáš vývoj včelstva i ošetření proti varroáze."
+        },
+        {
+          "q": "Trubec se líhne za…",
+          "options": ["16 dní", "21 dní", "24 dní"],
+          "answer": 2,
+          "why": "24 dní — nejdéle ze všech. Proto varroa preferuje trubčí plod: delší vývoj = víc času na množení roztočů. Toho včelaři využívají u vyřezávání trubčiny."
+        },
+        {
+          "q": "Jak dlouho žije letní dělnice?",
+          "options": ["4–6 týdnů", "6 měsíců", "3–5 let"],
+          "answer": 0,
+          "why": "Letní dělnice se udře za 4–6 týdnů. Zimní generace žije až 6 měsíců — a matka klidně 3–5 let. Stejná včela, jiný osud."
+        },
+        {
+          "q": "Z čeho se vylíhne trubec?",
+          "options": ["Z oplozeného vajíčka", "Z neoplozeného vajíčka", "Z mateří kašičky"],
+          "answer": 1,
+          "why": "Trubec vzniká z neoplozeného vajíčka — nemá otce, jen dědečka. Matka rozhoduje, jaké vajíčko naklade, podle velikosti buňky."
+        }
+      ]
+    },
+    {
+      "name": "Kdo co dělá",
+      "type": "text-choice",
+      "questions": [
+        {
+          "q": "Kdo jediný ve včelstvu opyluje květy a nosí nektar?",
+          "options": ["Dělnice", "Trubec", "Matka"],
+          "answer": 0,
+          "why": "Jen dělnice létají za snůškou. Trubec ani matka nikdy nesbírají — matka opustí úl jen při snubním proletu nebo s rojem."
+        },
+        {
+          "q": "Jaký je jediný úkol trubce?",
+          "options": ["Hlídat česno", "Oplodnit matku", "Krmit larvy"],
+          "answer": 1,
+          "why": "Trubec existuje jen kvůli páření na snubním proletu. Po spáření umírá. Uvnitř úlu nedělá nic — ani se sám nenakrmí bez pomoci dělnic."
+        },
+        {
+          "q": "Čím matka udržuje pořádek v úlu?",
+          "options": ["Bzučením", "Feromony", "Tancem"],
+          "answer": 1,
+          "why": "Mateří feromon (mateří látka) se šíří dotykem mezi včelami. Když zeslábne — matka stárne nebo chybí — včely začnou stavět matečníky."
+        },
+        {
+          "q": "Co dělá mladá dělnice první dny života?",
+          "options": ["Létá pro nektar", "Uklízí buňky a krmí larvy", "Hlídá vchod"],
+          "answer": 1,
+          "why": "Dělnice postupuje kariérou podle věku: uklízečka → krmička → stavitelka → strážkyně → létavka. Ven letí až po ~3 týdnech."
+        },
+        {
+          "q": "Kdo v úlu rozhoduje o vyrojení?",
+          "options": ["Matka", "Dělnice kolektivně", "Nejstarší trubec"],
+          "answer": 1,
+          "why": "Matka nevládne, včelstvo je kolektiv. O rojení, výměně matky i stavbě rozhodují dělnice společně. Matka je spíš „vaječníky úlu“ než královna."
+        }
+      ]
+    }
+  ]
+}

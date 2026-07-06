@@ -218,7 +218,7 @@ function AppContent() {
         <Route
           path="/"
           element={
-            <>
+            <div style={{ display: "flex", flexDirection: "column", height: "100%", overflow: "hidden" }}>
               {/* Hlavní záhlaví s volbou jazyka */}
               <header
                 style={{
@@ -249,20 +249,22 @@ function AppContent() {
 
               <RankBar xp={progress.xp} lang={lang} />
 
-              <LevelMap
-                progress={progress}
-                onSelectLevel={(lvlId, topicId) => {
-                  if (topicId) {
-                    navigate(`/hra/${lvlId}?topic=${topicId}`);
-                  } else {
-                    navigate(`/hra/${lvlId}`);
-                  }
-                }}
-                onOpenBadges={() => navigate("/odznaky")}
-                onTriggerEmailGate={() => setShowEmailGate(true)}
-                lang={lang}
-              />
-            </>
+              <div className="scrollable-page-content">
+                <LevelMap
+                  progress={progress}
+                  onSelectLevel={(lvlId, topicId) => {
+                    if (topicId) {
+                      navigate(`/hra/${lvlId}?topic=${topicId}`);
+                    } else {
+                      navigate(`/hra/${lvlId}`);
+                    }
+                  }}
+                  onOpenBadges={() => navigate("/odznaky")}
+                  onTriggerEmailGate={() => setShowEmailGate(true)}
+                  lang={lang}
+                />
+              </div>
+            </div>
           }
         />
 
@@ -283,32 +285,34 @@ function AppContent() {
         <Route
           path="/vysledek"
           element={
-            <ResultScreen
-              levelId={lastGameId}
-              score={lastScore}
-              maxScore={lastMaxScore}
-              xpEarned={lastXpEarned}
-              streakEarned={lastStreakEarned}
-              honeyEarned={lastHoneyEarned}
-              newlyUnlockedBadgeId={newlyUnlockedBadgeId}
-              lang={lang}
-              onPlayAgain={() => navigate(`/hra/${lastGameId}`)}
-              onBackToMap={() => navigate("/")}
-              onShare={() => setShowShareCard(true)}
-              onNextLevel={
-                (lastGameId === "skolka" && progress.levels.skolka?.done) ||
-                (lastGameId === "plast" && progress.levels.plast?.done)
-                  ? handleNextLevel
-                  : undefined
-              }
-            />
+            <div className="scrollable-page-content">
+              <ResultScreen
+                levelId={lastGameId}
+                score={lastScore}
+                maxScore={lastMaxScore}
+                xpEarned={lastXpEarned}
+                streakEarned={lastStreakEarned}
+                honeyEarned={lastHoneyEarned}
+                newlyUnlockedBadgeId={newlyUnlockedBadgeId}
+                lang={lang}
+                onPlayAgain={() => navigate(`/hra/${lastGameId}`)}
+                onBackToMap={() => navigate("/")}
+                onShare={() => setShowShareCard(true)}
+                onNextLevel={
+                  (lastGameId === "skolka" && progress.levels.skolka?.done) ||
+                  (lastGameId === "plast" && progress.levels.plast?.done)
+                    ? handleNextLevel
+                    : undefined
+                }
+              />
+            </div>
           }
         />
 
         <Route
           path="/odznaky"
           element={
-            <div>
+            <div style={{ display: "flex", flexDirection: "column", height: "100%", overflow: "hidden" }}>
               <div className="badge-collection-header">
                 <button onClick={() => navigate("/")} className="close-btn" aria-label="Zpět">
                   <svg viewBox="0 0 24 24" className="close-icon">
@@ -317,7 +321,9 @@ function AppContent() {
                 </button>
                 <h2>{t("badgesCollection", lang)}</h2>
               </div>
-              <BadgeGrid unlockedBadgeIds={progress.badges} />
+              <div className="scrollable-page-content" style={{ padding: "0 20px 20px 20px" }}>
+                <BadgeGrid unlockedBadgeIds={progress.badges} />
+              </div>
             </div>
           }
         />

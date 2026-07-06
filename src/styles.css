@@ -28,7 +28,6 @@
 
 html, body {
   width: 100%;
-  width: 100vw;
   margin: 0;
   padding: 0;
 }
@@ -38,11 +37,6 @@ body {
   font-family: var(--font-family);
   color: var(--text);
   line-height: 1.4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  min-height: 100dvh;
   overflow: hidden;
 }
 
@@ -50,7 +44,7 @@ body {
 .layout-container {
   width: 100%;
   max-width: 420px;
-  flex-shrink: 0;
+  margin: 0 auto;
   background-color: var(--bg);
   height: 100vh;
   height: 100dvh;
@@ -61,6 +55,16 @@ body {
   position: relative;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
   overflow: hidden;
+}
+
+@media (min-width: 421px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
 }
 
 .main-content {

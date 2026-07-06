@@ -179,47 +179,51 @@ export const QuizGame: React.FC<QuizGameProps> = ({
       {/* Streak tečky */}
       <StreakBar streak={streak} lang={lang} />
 
-      <div style={{ padding: "0 20px 20px 20px", display: "flex", flexDirection: "column", flex: 1 }}>
-        <QuestionCard
-          currentStep={currentIdx + 1}
-          totalSteps={totalQuestions}
-          questionText={currentQuestion.q}
-          lang={lang}
-        />
+      <div className="game-content-area">
+        <div className="game-scroll-area">
+          <div style={{ paddingTop: "10px" }}>
+            <QuestionCard
+              currentStep={currentIdx + 1}
+              totalSteps={totalQuestions}
+              questionText={currentQuestion.q}
+              lang={lang}
+            />
+          </div>
 
-        {/* Mřížka/Seznam odpovědí */}
-        <div className={levelType === "image-choice" ? "image-options-grid" : "options-grid"}>
-          {currentQuestion.options.map((opt, idx) => {
-            const isSelected = selectedOptIdx === idx;
-            let cardState: "default" | "correct" | "wrong" | "dimmed" = "default";
+          {/* Mřížka/Seznam odpovědí */}
+          <div className={levelType === "image-choice" ? "image-options-grid" : "options-grid"}>
+            {currentQuestion.options.map((opt, idx) => {
+              const isSelected = selectedOptIdx === idx;
+              let cardState: "default" | "correct" | "wrong" | "dimmed" = "default";
 
-            if (isAnswered) {
-              if (opt.isCorrect) {
-                cardState = "correct";
-              } else if (isSelected) {
-                cardState = "wrong";
-              } else {
-                cardState = "dimmed";
+              if (isAnswered) {
+                if (opt.isCorrect) {
+                  cardState = "correct";
+                } else if (isSelected) {
+                  cardState = "wrong";
+                } else {
+                  cardState = "dimmed";
+                }
               }
-            }
 
-            return (
-              <OptionCard
-                key={idx}
-                text={opt.text}
-                selected={isSelected}
-                disabled={isAnswered}
-                state={cardState}
-                type={levelType}
-                index={idx}
-                onClick={() => handleSelectOption(idx)}
-              />
-            );
-          })}
+              return (
+                <OptionCard
+                  key={idx}
+                  text={opt.text}
+                  selected={isSelected}
+                  disabled={isAnswered}
+                  state={cardState}
+                  type={levelType}
+                  index={idx}
+                  onClick={() => handleSelectOption(idx)}
+                />
+              );
+            })}
+          </div>
         </div>
 
-        {/* Vyhodnocovací / Feedback Panel a CTA */}
-        <div style={{ marginTop: "auto" }}>
+        {/* Vyhodnocovací / Feedback Panel a CTA v pevné patičce */}
+        <div className="game-footer-area">
           {isAnswered ? (
             <>
               <FeedbackPanel

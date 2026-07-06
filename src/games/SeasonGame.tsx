@@ -211,90 +211,91 @@ export const SeasonGame: React.FC<SeasonGameProps> = ({
 
       <StreakBar streak={streak} lang={lang} />
 
-      <div style={{ padding: "0 20px 20px 20px", display: "flex", flexDirection: "column", flex: 1 }}>
-        
-        {/* Stavové lišty pro včelaře */}
-        <div className="season-stats-container">
-          {/* Síla včelstva */}
-          <div className="season-stat-progress-row">
-            <div className="season-progress-header">
-              <span>{t("strength", lang)}</span>
-              <span>{sila}%</span>
+      <div className="game-content-area">
+        <div className="game-scroll-area">
+          {/* Stavové lišty pro včelaře */}
+          <div className="season-stats-container" style={{ marginTop: "10px" }}>
+            {/* Síla včelstva */}
+            <div className="season-stat-progress-row">
+              <div className="season-progress-header">
+                <span>{t("strength", lang)}</span>
+                <span>{sila}%</span>
+              </div>
+              <div className="season-progress-outer">
+                <div className="season-progress-inner sila" style={{ width: `${sila}%` }} />
+              </div>
             </div>
-            <div className="season-progress-outer">
-              <div className="season-progress-inner sila" style={{ width: `${sila}%` }} />
+
+            {/* Zásoby */}
+            <div className="season-stat-progress-row">
+              <div className="season-progress-header">
+                <span>{t("supplies", lang)}</span>
+                <span>{zasoby}%</span>
+              </div>
+              <div className="season-progress-outer">
+                <div className="season-progress-inner zasoby" style={{ width: `${zasoby}%` }} />
+              </div>
+            </div>
+
+            {/* Rojivost */}
+            <div className="season-stat-progress-row">
+              <div className="season-progress-header">
+                <span>{t("swarming", lang)}</span>
+                <span>{rojeni}%</span>
+              </div>
+              <div className="season-progress-outer">
+                <div className="season-progress-inner rojeni" style={{ width: `${rojeni}%` }} />
+              </div>
+            </div>
+
+            {/* Med ve skladu */}
+            <div className="season-honey-counter">
+              {t("honeyYield", lang)}: {med} kg
             </div>
           </div>
 
-          {/* Zásoby */}
-          <div className="season-stat-progress-row">
-            <div className="season-progress-header">
-              <span>{t("supplies", lang)}</span>
-              <span>{zasoby}%</span>
-            </div>
-            <div className="season-progress-outer">
-              <div className="season-progress-inner zasoby" style={{ width: `${zasoby}%` }} />
-            </div>
+          {/* Instrukční / Popisná karta měsíce */}
+          <div className="season-description">
+            <span className="season-month-label">
+              {t("month", lang)}: {currentMonth.month}
+            </span>
+            <p className="season-text-content">{currentMonth.text}</p>
           </div>
 
-          {/* Rojivost */}
-          <div className="season-stat-progress-row">
-            <div className="season-progress-header">
-              <span>{t("swarming", lang)}</span>
-              <span>{rojeni}%</span>
-            </div>
-            <div className="season-progress-outer">
-              <div className="season-progress-inner rojeni" style={{ width: `${rojeni}%` }} />
-            </div>
-          </div>
+          {/* Možnosti volby */}
+          <div className="options-grid" style={{ marginBottom: "20px" }}>
+            {currentMonth.options.map((opt, idx) => {
+              const isSelected = selectedOptIdx === idx;
+              let cardState: "default" | "correct" | "wrong" | "dimmed" = "default";
 
-          {/* Med ve skladu */}
-          <div className="season-honey-counter">
-            {t("honeyYield", lang)}: {med} kg
-          </div>
-        </div>
-
-        {/* Instrukční / Popisná karta měsíce */}
-        <div className="season-description">
-          <span className="season-month-label">
-            {t("month", lang)}: {currentMonth.month}
-          </span>
-          <p className="season-text-content">{currentMonth.text}</p>
-        </div>
-
-        {/* Možnosti volby */}
-        <div className="options-grid" style={{ marginBottom: "20px" }}>
-          {currentMonth.options.map((opt, idx) => {
-            const isSelected = selectedOptIdx === idx;
-            let cardState: "default" | "correct" | "wrong" | "dimmed" = "default";
-
-            if (isAnswered) {
-              if (opt.correct) {
-                cardState = "correct";
-              } else if (isSelected) {
-                cardState = "wrong";
-              } else {
-                cardState = "dimmed";
+              if (isAnswered) {
+                if (opt.correct) {
+                  cardState = "correct";
+                } else if (isSelected) {
+                  cardState = "wrong";
+                } else {
+                  cardState = "dimmed";
+                }
               }
-            }
 
-            return (
-              <OptionCard
-                key={idx}
-                text={opt.label}
-                selected={isSelected}
-                disabled={isAnswered}
-                state={cardState}
-                type="text-choice"
-                index={idx}
-                onClick={() => handleSelectOption(idx)}
-              />
-            );
-          })}
+              return (
+                <OptionCard
+                  key={idx}
+                  text={opt.label}
+                  selected={isSelected}
+                  disabled={isAnswered}
+                  state={cardState}
+                  type="text-choice"
+                  index={idx}
+                  onClick={() => handleSelectOption(idx)}
+                />
+              );
+            })}
+          </div>
         </div>
 
-        {/* Spodní vyhodnocení */}
-        <div style={{ marginTop: "auto" }}>
+        {/* Spodní vyhodnocení v pevné patičce */}
+        <div className="game-footer-area">
           {isAnswered ? (
             <>
               <FeedbackPanel

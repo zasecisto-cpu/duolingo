@@ -312,62 +312,63 @@ export const CombGame: React.FC<CombGameProps> = ({
 
       <StreakBar streak={streak} lang={lang} />
 
-      <div style={{ padding: "0 20px 20px 20px", display: "flex", flexDirection: "column", flex: 1 }}>
-        
-        {/* Instrukční karta */}
-        <div className="season-description" style={{ padding: "12px", marginBottom: "16px", textAlign: "center" }}>
-          <div className="question-card-label" style={{ marginBottom: "2px" }}>
-            {lang === "cs" ? "Klikni na buňku a najdi:" : "Kliknij na komórkę i znajdź:"}
+      <div className="game-content-area">
+        <div className="game-scroll-area">
+          {/* Instrukční karta */}
+          <div className="season-description" style={{ padding: "12px", margin: "10px 0 16px 0", textAlign: "center" }}>
+            <div className="question-card-label" style={{ marginBottom: "2px" }}>
+              {lang === "cs" ? "Klikni na buňku a najdi:" : "Kliknij na komórkę i znajdź:"}
+            </div>
+            <h2 style={{ fontSize: "20px", fontWeight: 800, color: "var(--orange)", textTransform: "uppercase" }}>
+              {currentTask.label}
+            </h2>
           </div>
-          <h2 style={{ fontSize: "20px", fontWeight: 800, color: "var(--orange)", textTransform: "uppercase" }}>
-            {currentTask.label}
-          </h2>
-        </div>
 
-        {/* SVG plást (8 sloupců × 5 řádků) */}
-        <div className="comb-svg-container">
-          <svg className="comb-svg" viewBox="0 0 420 300">
-            <g>
-              {Array.from({ length: 8 }).map((_, col) =>
-                Array.from({ length: 5 }).map((__, row) => {
-                  // Výpočet středu hexagonu
-                  const cx = col * hSpacing + 35;
-                  const cy = row * vSpacing + (col % 2 === 0 ? 0 : vSpacing / 2) + 30;
+          {/* SVG plást (8 sloupců × 5 řádků) */}
+          <div className="comb-svg-container">
+            <svg className="comb-svg" viewBox="0 0 420 300">
+              <g>
+                {Array.from({ length: 8 }).map((_, col) =>
+                  Array.from({ length: 5 }).map((__, row) => {
+                    // Výpočet středu hexagonu
+                    const cx = col * hSpacing + 35;
+                    const cy = row * vSpacing + (col % 2 === 0 ? 0 : vSpacing / 2) + 30;
 
-                  const isClicked = clickedCell && clickedCell.col === col && clickedCell.row === row;
-                  const type = getCellType(col, row);
+                    const isClicked = clickedCell && clickedCell.col === col && clickedCell.row === row;
+                    const type = getCellType(col, row);
 
-                  let cellClass = "hex-grid-cell";
-                  if (isAnswered) {
-                    if (type === currentTask.find) {
-                      cellClass += " correct-hex";
+                    let cellClass = "hex-grid-cell";
+                    if (isAnswered) {
+                      if (type === currentTask.find) {
+                        cellClass += " correct-hex";
+                      } else if (isClicked) {
+                        cellClass += " wrong-hex";
+                      }
                     } else if (isClicked) {
-                      cellClass += " wrong-hex";
+                      cellClass += " selected-hex";
                     }
-                  } else if (isClicked) {
-                    cellClass += " selected-hex";
-                  }
 
-                  return (
-                    <g key={`${col}-${row}`} onClick={() => handleCellClick(col, row)}>
-                      {/* Vnější okraj / pozadí hexu */}
-                      <polygon
-                        points={getHexPointsFlat(cx, cy, hexSize)}
-                        fill="#F5F5F5"
-                        className={cellClass}
-                      />
-                      {/* Vnitřek buňky */}
-                      {renderHexContent(cx, cy, col, row)}
-                    </g>
-                  );
-                })
-              )}
-            </g>
-          </svg>
+                    return (
+                      <g key={`${col}-${row}`} onClick={() => handleCellClick(col, row)}>
+                        {/* Vnější okraj / pozadí hexu */}
+                        <polygon
+                          points={getHexPointsFlat(cx, cy, hexSize)}
+                          fill="#F5F5F5"
+                          className={cellClass}
+                        />
+                        {/* Vnitřek buňky */}
+                        {renderHexContent(cx, cy, col, row)}
+                      </g>
+                    );
+                  })
+                )}
+              </g>
+            </svg>
+          </div>
         </div>
 
-        {/* Spodní vyhodnocení */}
-        <div style={{ marginTop: "auto" }}>
+        {/* Spodní vyhodnocení v pevné patičce */}
+        <div className="game-footer-area">
           {isAnswered ? (
             <>
               <FeedbackPanel
